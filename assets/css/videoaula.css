@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* ------SIDE MENU------ */
+.sidebar{
+  background-color: #fff;
+  width: 6rem;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.219);
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sidebar:hover{
+  background-color: #fff;
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.219);
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logocontent img{
+  width: 75px;
+  height: 75px;
+}
+
+.logocontent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+.nav-list a:hover{
+  color: #5e9da7;
+  width: 20rem;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  text-align: justify;
+}
+
+.nav-list a{
+  color: #5e9da7;
+  width: 20rem;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  text-align: justify;
+}
+.leave{
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe{
+  margin-left: 6rem;
+  z-index: 0;
+  width: 93%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list i{
+  font-size: 29px;
+  width: 5rem;
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  position: absolute;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 39rem;
+}
+.nav-list a{
+  text-decoration-line: none;
+}
+.nav-list span{
+  font-family: "Montserrat";
+  font-size: 12px;
+  display: flex;
+  width: 50%;
+  padding-left: 10rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar:hover span{
+  font-family: "Montserrat";
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  padding-left: 0rem;
+}
+
+.sidebar-item{
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+
+.sidebar-item:hover{
+  background-color:rgba(2, 75, 94, 0.705);
+  transition: 0.5s;
+}
+
+.sidebar-item:hover a{
+  color: #fff;
+}
+
+.sidebar-lastchild{
+  margin-top: 4rem;
+}
+/*---------COURSES---------*/
+#slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.219);
+    z-index: -1;
+}
+
+  .slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 1300px;
+    height: 300px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 1300px;
+    position: relative;
+    transition: 1.437s ease;
+  }
+  
+  .slide img{
+    width: 1300px;
+    height: 300px;
+}
+  
+  .manual-navigation{
+    position: absolute;
+    width: 100px;
+    margin-left: 450px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 15px;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -1300px;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -2600px;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -3900px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 270px;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 15px;
+  }
+  
+  
+  #radio1:checked ~  .navigation-auto .auto-btn1{
+    background-color: #fff;
+  }
+  
+  #radio2:checked ~  .navigation-auto .auto-btn2{
+    background-color: #fff;
+  }
+  
+  #radio3:checked ~  .navigation-auto .auto-btn3{
+    background-color: #fff;
+  }
+  
+  #radio4:checked ~  .navigation-auto .auto-btn4{
+    background-color: #fff;
+  }
+  
+
+/*---------CURSOS---------*/
+
+#courses-container{
+  padding-left: 8rem;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.courses-title{
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: rgba(2, 75, 94, 0.705);
+}
+
+.courses-show-all{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-left: 68%;
+}
+
+.courses-show-all a{
+  text-decoration-line: none;
+  color: rgba(133, 131, 131, 0.933);
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.courses-show-all a:hover{
+  color: rgba(2, 75, 94, 0.705);
+  transition: 0.5s;
+}
+
+.courses-title-hr{
+  width: 90%;
+  margin-left: 8rem;
+  color:rgba(2, 75, 94, 0.705);
+  margin-top: 0.5rem;
+  opacity: 70%;
+}
+
+.courses-banners-container{
+  margin-left: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.courses-banner{
+  margin-top: 2rem;
+  display: inline-block;
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.219);
+  padding-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.courses-banner:hover{
+  background-color: rgba(240, 238, 238, 0.87);
+  transition: 0.5s;
+}
+
+.courses-banner img{
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.courses-banner-title{
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.html-text-color{
+  color: #ff5617;
+  opacity: 70%;
+}
+
+.css-text-color{
+  color: #0097f6;
+  opacity: 70%;
+}
+
+
+.javascript-text-color{
+  color: #f8dc3e;
+  opacity: 70%;
+}
+
+.C-text-color{
+  color: #004285;
+  opacity: 70%;
+}
+
+.python-text-color{
+  color: #ffd727;
+  opacity: 70%;
+}
+
+.courses-banner a{
+  text-decoration-line: none;
+}
+
+.courses-banner-info{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 90px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: rgba(104, 103, 103, 0.933);
+}
+/* ------PROJECTS------- */
+#projects-container{
+  padding-left: 8rem;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.projects-title{
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: rgba(2, 75, 94, 0.705);
+}
+
+.projects-show-all{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-left: 68%;
+}
+
+.projects-show-all a{
+  text-decoration-line: none;
+  color: rgba(133, 131, 131, 0.933);
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.projects-show-all a:hover{
+  color: rgba(2, 75, 94, 0.705);
+  transition: 0.5s;
+}
+
+.projects-title-hr{
+  width: 90%;
+  margin-left: 8rem;
+  color:rgba(2, 75, 94, 0.705);
+  margin-top: 0.5rem;
+  opacity: 70%;
+}
+
+.projects-banners-container{
+  margin-left: 7rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects-banner{
+  display: inline-block;
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.219);
+  border-radius: 15px;
+  background-color:rgba(0, 0, 0, 0.219);
+}
+
+.projects-banner img{
+  border-radius: 10px;
+  width: 175px;
+  height: 350px;
+  transition: 0.5s;
+}
+
+.projects-banner img:hover{
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+/* ------FOOTER------ */
+.footer-container{
+  margin-top: 2rem;
+  padding: 0.6rem;
+  margin-left: 6rem;
+  background-color: rgba(2, 75, 94, 0.705);
+}
+
+
+.footer-equitech-logo{
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-cefet-logo img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-cefet-logo{
+  display: flex;
+  align-items: center;
+  margin-left: 80%;
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: #fff;
+}

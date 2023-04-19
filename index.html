@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/img/favicon.png" rel="icon">
+    <script src="https://kit.fontawesome.com/9e33a92b25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Equitech</title>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <img src="assets/img/logo.png" alt="logo" id="logo-header">
+            <span>Equitech</span>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#weare">Quem somos</a></li>
+                    <li><a href="#courses-container">Cursos</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#opinions-container">Opiniões</a></li>
+                    <li><a href="#FAQ-container">FAQ</a></li>
+                    <button onclick="location.href='login.html?#';">Login</button>                
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <table id="home">
+        <tr>
+            <td width="50%">
+                <div>
+                    <span id="title-equitech">Equitech<br>Estude agora mesmo<br>Sem custos adicionais.<span id="subtitle-equitech"><br>De programadores para futuros programadores.</span></span>
+                    <button class="register-button" onclick="location.href='register.html?#';">Registrar-se</button>
+                </div>
+            </td>
+            <td>
+                <div class="home-img-floating">
+                    <img src="assets/img/home-img.png" alt="" class="home-img">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="weare">
+        <div class="users-numbers">
+            <div class="user-numbers-item">
+                <span class="registered-numbers animated-numbers" data-val="100"></span>
+                <div class="registered-numbers-subtitle">Alunos utilizam a Equitech</div>
+            </div>
+            <div class="user-numbers-item">
+                <div class="registered-numbers animated-numbers" data-val="100">000</div>
+                <div class="registered-numbers-subtitle">Videoaulas disponíveis para todos</div>
+            </div>
+            <div class="user-numbers-item">
+                <div class="registered-numbers animated-numbers" data-val="100">000</div>
+                <div class="registered-numbers-subtitle">Taxa de satisfação dos alunos</div>
+            </div>
+        </div>
+        <div class="website-info">
+            <div class="info-text">
+                <span class="info-text-title">Quem somos?</span>
+                <span class="info-text-subtitle">A Equitech é um projeto de dois estudantes do CEFET-MG Divinópolis que possui o objetivo de transformar o acesso a conteúdos sobre programação mais acessíveis para todos os interessados em aprender.</span>
+                <span class="info-text-title">Por que escolher a Equitech?</span>
+                <span class="info-text-list">
+                    <i class="fa-solid fa-money-bill"></i>&nbspAcesso completamente gratuito
+                </span>
+                <span class="info-text-subtitle first-item">Todo o conteúdo disponibilizado pela Equitech é gratuito, sendo pago apenas caso o usuário opte por apoiar o projeto.</span>
+                <span class="info-text-list">
+                    <i class="fa-solid fa-video"></i>&nbspConteúdo completo e de qualidade
+                </span>
+                <span class="info-text-subtitle first-item">Como programadores, entendemos que, para iniciantes, o assunto pode ser complicado. Por isso, priorizamos qualidade, com aulas objetivas e bem explicadas.</span>
+                <span class="info-text-list">
+                    <i class="fa-solid fa-keyboard"></i>&nbspProjetos de expansão
+                </span>
+                <span class="info-text-subtitle first-item">No aprendizando a programação, a prática é um fator primordial para a expansão do conhecimento. Tendo isso em vista, disponibilizamos dezenas de projetos gratuitos com correção.</span>
+                <div class="info-img">
+                    <img src="assets/img/section2-1.svg">
+                    <img src="assets/img/section2-2.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="courses-container">
+        <div class="courses-title">Cursos disponíveis</div>
+        <div id="courses-selector-container">
+            <li class="courses-selector-item" id="html-selector">
+                <button onclick="html_course_btn()" class="btn active">
+                    <i class="fa-brands fa-html5"></i>
+                    <span class="courses-selector-text">&nbspHTML</span>
+                </button>
+            </li>
+            <li class="courses-selector-item" id="css-selector">
+                <button onclick="css_course_btn()" class="btn">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span class="courses-selector-text">&nbspCSS</span>
+                </button>
+            </li>
+            <li class="courses-selector-item" id="javascript-selector">
+                <button onclick="javascript_course_btn()" class="btn">
+                    <i class="fa-brands fa-square-js"></i>
+                    <span class="courses-selector-text">&nbspJavascript</span>
+                </button>
+            </li>
+            <li class="courses-selector-item" id="c-selector">
+                <button onclick="c_course_btn()" class="btn">
+                    <i class="devicon-c-plain"></i>
+                    <span class="courses-selector-text">&nbspC</span>
+                </button>
+            </li>
+            <li class="courses-selector-item" id="python-selector">
+                <button onclick="python_course_btn()" class="btn">
+                    <i class="fa-brands fa-python"></i>
+                    <span class="courses-selector-text">&nbspPython</span>
+                </button>
+            </li>
+        </div>
+        <div class="hidden-div-container" id="html-hidden-div">
+            <div class="hidden-div-text-container">
+                <span class="hidden-div-title">
+                    HTML
+                </span>
+                <div class="hidden-div-text">
+                    A Hypertext Markup Language é a linguagem de marcação que estrutura todas as páginas web, essencial para qualquer desenvolvedor que deseja trabalhar no ramo de web development. No curso de HTML, você irá aprender os fundamentos da programação web, bem como estruturas básicas como parágrafos, títulos, listas, tables, divs, frames e muito mais.<br>É o curso básico da Equitech, sendo recomendado como ponto de partida para qualquer desenvolvedor.
+                </div>
+            </div>
+            <div class="hidden-div-img">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+        </div>
+        <div class="hidden-div-container" id="css-hidden-div">
+            <div class="hidden-div-text-container">
+                <span class="hidden-div-title">
+                    CSS
+                </span>
+                <div class="hidden-div-text">
+                    Conhecido também como Cascading Style Sheets, o CSS é a linguagem utilizada para estilizar os websites, deixando-os mais agradáveis e chamativos. É essencial para que sua página web atraia novos usuários, dando um toque especial e deixando-o com cara de moderno. Aprenda sobre margin, padding, fontes, cores, animações e muito mais nesse curso da Equitech.<br>Combine-o com HTML e veja seus sites ficarem cada vez mais bonitos e profissionais.
+                </div>
+            </div>
+            <div class="hidden-div-img">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+        </div>
+        <div class="hidden-div-container" id="javascript-hidden-div">
+            <div class="hidden-div-text-container">
+                <span class="hidden-div-title">
+                    Javascript
+                </span>
+                <div class="hidden-div-text">
+                    Javascript é a linguagem mais famosa e utilizada no mundo todo. Na Equitech, você irá aprender a utilizá-la para incrementar funções no seu website, deixando-o mais interativo. Estude sobre arrays, animations, forms, intevalos, variáveis, e sobre as mais diversas funções da própria linguagem.<br>Combinado com CSS e HTML, o conhecimento sobre Javascript o tornará um desenvolvedor front-end profissional.
+                </div>
+            </div>
+            <div class="hidden-div-img">
+                <i class="fa-brands fa-square-js"></i>
+            </div>
+        </div>
+        <div class="hidden-div-container" id="c-hidden-div">
+            <div class="hidden-div-text-container">
+                <span class="hidden-div-title">
+                    C
+                </span>
+                <div class="hidden-div-text">
+                    "Se você aprende C, aprende qualquer outra!" Essa frase dita por muitos programadores é verdade! A linguagem C é conhecida como o pai das linguagens, tendo sido utilizada como base para muitas outras, como C++, C#, Java, entre outras. É por isso que aprender C é essencial para qualquer programador.<br>Estude estruturas, ponteiros, TAD's, recursividade, vetores, matrizes e muito mais no curso completo de C da Equitech.
+                </div>
+            </div>
+            <div class="hidden-div-img">
+                <i class="devicon-c-plain"></i>
+            </div>
+        </div>
+        <div class="hidden-div-container" id="python-hidden-div">
+            <div class="hidden-div-text-container">
+                <span class="hidden-div-title">
+                    Python
+                </span>
+                <div class="hidden-div-text">
+                    Sendo conhecido como a famosa linguagem da automação, Python é, sem dúvidas, uma das melhores portas de entrada para qualquer programador iniciante, por ser extremamente documentada e fácil de aprender.<br>No curso de Python, você irá desde os fundamentos aos conceitos mais avançados da linguagem, se tornando um profissional da automação.
+                </div>
+            </div>
+            <div class="hidden-div-img">
+                <i class="fa-brands fa-python"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="plans">
+        <div class="plans-title">Planos disponíveis</div>
+        <div class="plans-container">
+            <div class="firstplan">
+                <div class="plan-img">
+                    <img src="assets/img/plans/1.svg">
+                </div>
+                <span class="plan-title-one plan-title">
+                    GRATUITO
+                </span>
+                <span class="plans-price">
+                    R$00,00
+                </span>
+                <div class="plan-button plan-button-one">
+                    <a href="404.html"><button class="plan-button-item">Assinar</button></a>
+                </div>
+                <ul class="plans-items">
+                    <li><i class="fa-solid fa-check"></i>Acesso as aulas</li>
+                    <li><i class="fa-solid fa-check"></i>Acesso aos projetos</li>
+                    <li><i class="fa-solid fa-check"></i>Fórum de perguntas</li>
+                    <div class="unchecked">
+                    <li><i class="fa-solid fa-xmark"></i>&nbspApoia o projeto</li>
+                    <li><i class="fa-solid fa-xmark"></i>&nbspContato com professores</li>
+                    <li><i class="fa-solid fa-xmark"></i>&nbspMonitorias exclusivas</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="secondplan">
+                <div class="plan-img">
+                    <img src="assets/img/plans/2.svg">
+                </div>
+                <span class="plan-title plan-title-two">
+                    PREMIUM
+                </span>
+                <span class="plans-price">
+                    R$19,90 ao mês
+                </span>
+                <div class="plan-button plan-button-two">
+                    <a href="404.html"><button class="plan-button-item">Assinar</button></a>
+                </div>
+                <ul class="plans-items">
+                    <li><i class="fa-solid fa-check"></i>Acesso as aulas</li>
+                    <li><i class="fa-solid fa-check"></i>Acesso aos projetos</li>
+                    <li><i class="fa-solid fa-check"></i>Fórum de perguntas</li>
+                    <li><i class="fa-solid fa-check"></i>Apoia o projeto</li>
+                    <li><i class="fa-solid fa-check"></i>Contato com professores</li>
+                    <li><i class="fa-solid fa-check"></i>Monitorias exclusivas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- ------OPINIONS------ -->
+<div id="opinions-container">
+    <span class="opinions-title">Opiniões de alunos</span>
+    <div class="opinions-cards-container">
+        <div class="opinion-cards first-child">
+            <div class="opinion-user-image">
+                <img src="assets/img/opinions-icons/1.png">
+            </div>
+            <div class="opinion-user-name">
+                Thales Amaral
+            </div>
+            <div class="opinion-user-text">
+                "Ótimos conteúdos e professores, me ajuda muito no meu aprendizado. Obrigado, Equitech!"
+            </div>
+        </div>
+        <div class="opinion-cards">
+            <div class="opinion-user-image">
+                <img src="assets/img/opinions-icons/2.png">
+            </div>
+            <div class="opinion-user-name">
+                Pedro Resende
+            </div>
+            <div class="opinion-user-text">
+                "A Equitech é excelente, tirou diversas dúvidas minhas e os projetos são muito interessantes. Recomendo!"
+            </div>
+        </div>
+        <div class="opinion-cards">
+            <div class="opinion-user-image">
+                <img src="assets/img/opinions-icons/3.png">
+            </div>
+            <div class="opinion-user-name">
+                Milena Heringer
+            </div>
+            <div class="opinion-user-text">
+                "A Equitech tem uma interface confortável e fácil de usar. Excelente plataforma, recomendo!"
+            </div>
+        </div>
+        <div class="opinion-cards">
+            <div class="opinion-user-image">
+                <img src="assets/img/opinions-icons/4.png">
+            </div>
+            <div class="opinion-user-name">
+                Rafael Gonçalo Pereira
+            </div>
+            <div class="opinion-user-text">
+                "A Equitech me ajuda bastante com o desenvolvimento dos meus projetos pessoais. Recomendo muito!"
+            </div>
+        </div>
+        <div class="opinion-cards">
+            <div class="opinion-user-image">
+                <img src="assets/img/opinions-icons/5.png">
+            </div>
+            <div class="opinion-user-name">
+                Charles Henrique
+            </div>
+            <div class="opinion-user-text">
+                "Interface excelente, bem feita. Programadores muito talentosos. 5 estrelas, recomendo fortemente e parabenizo os criadores."
+            </div>
+        </div>
+        <div class="opinion-cards last-child">
+            <div class="opinion-user-image">
+                <img src="assets/img/opinions-icons/6.png">
+            </div>
+            <div class="opinion-user-name">
+                Maria Eduarda Santiago
+            </div>
+            <div class="opinion-user-text">
+                "Website lindo com propostas interessantes. Ótimas videoaulas, altamente recomendado."
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------FAQ------ -->
+<div id="FAQ-container">
+    <div class="FAQ-title">Perguntas frequentes</div>
+    <div class="FAQ-content-container">
+        <div class="col-1">
+            <div class="row-1">
+                <div class="question">
+                    1. Como surgiu o projeto?
+                    <button class="question-button" onclick="question_one()">
+                        <i class="fa-solid fa-chevron-down" id="first-chevron"></i>
+                    </button>
+                </div>
+                <div class="answer" id="answer-1">
+                    A Equitech surgiu como um projeto de trabalho bimestral do Prof. Alberto Pena Lara do CEFET-MG Campus V.
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="question">
+                    2. Quem somos?
+                    <button class="question-button" onclick="question_two()">
+                        <i class="fa-solid fa-chevron-down" id="second-chevron"></i>
+                    </button>
+                </div>
+                <div class="answer" id="answer-2">
+                    Nós, da Equitech, somos dois alunos do CEFET-MG Campus Divinópolis. Somos Thales Alves Amaral e Pedro Henrique Resende dos Santos, do 1° ano de Informática.
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="question">
+                    3. Os cursos são gratuitos?
+                    <button class="question-button" onclick="question_three()">
+                        <i class="fa-solid fa-chevron-down" id="third-chevron"></i>
+                    </button>
+                </div>
+                <div class="answer" id="answer-3">
+                    Sim! Todos os cursos disponibilizados na Equitech são completamente gratuitos. Você só paga o plano premium para ter acesso à um site sem anúncios e monitorias exclusivas com professores da Equitech.
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="question">
+                    4. Como funciona o premium?
+                    <button class="question-button" onclick="question_four()">
+                        <i class="fa-solid fa-chevron-down" id="fourth-chevron"></i>
+                    </button>
+                </div>
+                <div class="answer" id="answer-4">
+                    O plano premium funciona como uma assinatura. Ele é renovado mensalmente no valor de 19,99 até o cancelamento do usuário. Caso o plano for cancelado, o usuário continuará tendo os benefícios do premium até o fim do prazo do último pagamento.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ------FOOTER------ -->
+    <footer class="footer-container">
+        <div class="logo-equitech-cefet">
+            <div class="footer-equitech-logo">
+                <span>Copyright © 2022 Equitech</span>
+                <div class="footer-cefet-logo">
+                    <img src="assets/img/CEFET logo.png"> CEFET-MG
+                 </div>
+            </div> 
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

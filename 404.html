@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equitech - Página não encontrada</title>
+    <link href="assets/img/favicon.png" rel="icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container img{
+            width: 25rem;
+            height: 25rem;
+        }
+        .bigger-text{
+            font-family: "Montserrat", sans-serif;
+            color: rgba(2, 75, 94, 0.705);
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .return-button{
+            margin-top: 2rem;
+        }
+        
+        .return-button button{
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(0, 135, 169, 0.055);
+            font-family: "Montserrat", sans-serif;
+            font-size: 15px;
+            color: #5e9da7;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .return-button button:hover{
+            background-color: rgba(2, 75, 94, 0.705);
+            color: white;
+        }
+
+        .smaller-text{
+            text-align: center;
+            font-family: "Montserrat";
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/img/404.svg">
+        <span class="bigger-text">Oops... página não encontrada!</span>
+        <span class="smaller-text">Parece que você acessou uma parte do site que ainda não existe!<br>Retorne à página inicial que ainda estamos trabalhando aqui.</span>
+        <div class="return-button">
+            <a href="index.html">
+                <button>Retornar a página inicial</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

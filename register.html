@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/css/register.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/user-register-login.js"></script>
+    <title>Equitech - Registro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image img-floating">
+            <img src="assets/img/register-img.svg" class="form-image">
+        </div>
+        <div class="form">
+            <form action="#" id="form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button onclick="location.href='login.html?#'">Login</button>
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <label for="name">Nome completo:</label><br>
+                            <input type="text" placeholder="William Henry Gates III" id="name"><br>
+                            <span id="name-required" class="required">Campo obrigatório!</span>
+                            <label for="email">Endereço de e-mail:</label><br>
+                            <input type="email" placeholder="billgates@exemplo.com" id="email"><br>
+                            <label for="password">Senha:</label><br>
+                            <input type="password" placeholder="melindagates123" id="password"><br>
+                            <label for="phone">Telefone:</label><br>
+                            <input type="tel" placeholder="(**) ****-****" id="phone"><br>
+                    </div>
+                </div>
+                <div id="submit-button">
+                    <button id="register" onclick="register()">Cadastrar-se</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
